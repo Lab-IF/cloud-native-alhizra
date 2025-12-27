@@ -1,64 +1,115 @@
-# Praktikum Cloud-Native Application Development
+<div align="center">
 
-**Kode Mata Kuliah:** CW6552021552  
-**Semester:** V (Lima)  
-**SKS:** 3 SKS  
-**Program Studi:** Informatika  
-**Fakultas:** Teknik  
-**Universitas:** Muhammadiyah Makassar
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Cloud Native](https://img.shields.io/badge/Cloud%20Native-CNCF-231F20?style=for-the-badge&logo=cncf&logoColor=white)
+![Microservices](https://img.shields.io/badge/Microservices-FF6F00?style=for-the-badge&logo=fastapi&logoColor=white)
+![License](https://img.shields.io/badge/License-Educational-green?style=for-the-badge)
+
+# ☁️ Praktikum Cloud-Native Application Development
+
+### *Membangun Aplikasi Modern dengan Container dan Orchestration*
+
+**Laboratorium Informatika**  
+**Fakultas Teknik - Universitas Muhammadiyah Makassar**
+
+---
+
+[![Made with ❤️ by devnolife](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F%20by-devnolife-red?style=flat-square)](https://github.com/devnolife)
+
+</div>
+
+---
+
+## 📋 Informasi Mata Kuliah
+
+| Atribut | Detail |
+|---------|--------|
+| **Kode Mata Kuliah** | `CW6552021552` |
+| **Semester** | V (Lima) |
+| **SKS** | 3 SKS |
+| **Program Studi** | Informatika |
+| **Fakultas** | Teknik |
+| **Universitas** | Universitas Muhammadiyah Makassar |
 
 ---
 
 ## 📘 Deskripsi
 
-Mata kuliah ini memperkenalkan prinsip-prinsip inti arsitektur cloud-native. Mahasiswa akan belajar cara mengemas aplikasi menggunakan kontainerisasi (Docker), mengelola kontainer dalam skala besar dengan orkestrasi (Kubernetes), dan memahami konsep infrastruktur yang tidak dapat diubah (immutable infrastructure).
+> Mata kuliah ini memperkenalkan prinsip-prinsip inti **arsitektur cloud-native**. Mahasiswa akan belajar cara mengemas aplikasi menggunakan **kontainerisasi (Docker)**, mengelola kontainer dalam skala besar dengan **orkestrasi (Kubernetes)**, dan memahami konsep **immutable infrastructure**.
 
 ## 🎯 Capaian Pembelajaran
 
-Setelah menyelesaikan mata kuliah ini, mahasiswa diharapkan mampu:
+<table>
+<tr>
+<td>
 
-1. Memahami prinsip cloud-native architecture
-2. Menguasai containerization dengan Docker
-3. Mampu melakukan container orchestration dengan Kubernetes
-4. Mengimplementasikan microservices pattern
-5. Menerapkan best practices cloud-native deployment
+| No | Capaian |
+|----|---------|
+| 1 | Memahami prinsip **cloud-native architecture** |
+| 2 | Menguasai **containerization** dengan Docker |
+| 3 | Mampu melakukan **container orchestration** dengan Kubernetes |
+| 4 | Mengimplementasikan **microservices pattern** |
+| 5 | Menerapkan **best practices** cloud-native deployment |
 
-## 📚 Struktur Materi
+</td>
+</tr>
+</table>
 
-Repositori ini mencakup materi untuk **8 pertemuan pertama** (sampai UTS):
+## 📚 Roadmap Pembelajaran
 
-| Pertemuan | Topik | Teknologi Utama |
-|-----------|-------|-----------------|
-| [01](./pertemuan-01) | **Introduction to Cloud-Native Principles** | 12-Factor App, Microservices |
-| [02](./pertemuan-02) | **Docker Fundamentals: Images & Containers** | Docker CLI, Images, Containers |
-| [03](./pertemuan-03) | **Dockerfile Best Practices** | Multi-stage builds, Optimization |
-| [04](./pertemuan-04) | **Docker Compose untuk Multi-Container Apps** | docker-compose.yml, Networking |
-| [05](./pertemuan-05) | **Container Registry** | Docker Hub, Private Registry |
-| [06](./pertemuan-06) | **Kubernetes Architecture & Concepts** | Minikube, kubectl, Pods |
-| [07](./pertemuan-07) | **Pods, Deployments, dan Services** | Deployments, Services, Scaling |
-| [08](./pertemuan-08) | **UTS: Containerized Application** | Full-stack deployment project |
+> Materi dirancang untuk **8 pertemuan** dengan pendekatan *learning by doing*
 
-## 🚀 Getting Started
+```mermaid
+graph LR
+    A[☁️ Intro] --> B[🐳 Docker]
+    B --> C[📦 Dockerfile]
+    C --> D[🔗 Compose]
+    D --> E[📤 Registry]
+    E --> F[☸️ K8s Intro]
+    F --> G[🚀 Deploy]
+    G --> H[🏆 Project]
+```
+
+| Pertemuan | Topik | Teknologi Utama | Status |
+|:---------:|-------|-----------------|:------:|
+| **01** | [Introduction to Cloud-Native Principles](./pertemuan-01) | 12-Factor App, Microservices | 🟢 |
+| **02** | [Docker Fundamentals: Images & Containers](./pertemuan-02) | Docker CLI, Images, Containers | 🟢 |
+| **03** | [Dockerfile Best Practices](./pertemuan-03) | Multi-stage builds, Optimization | 🟢 |
+| **04** | [Docker Compose untuk Multi-Container Apps](./pertemuan-04) | docker-compose.yml, Networking | 🟢 |
+| **05** | [Container Registry](./pertemuan-05) | Docker Hub, Private Registry | 🟢 |
+| **06** | [Kubernetes Architecture & Concepts](./pertemuan-06) | Minikube, kubectl, Pods | 🟢 |
+| **07** | [Pods, Deployments, dan Services](./pertemuan-07) | Deployments, Services, Scaling | 🟢 |
+| **08** | [UTS: Containerized Application](./pertemuan-08) | Full-stack deployment project | 🎯 |
+
+## 🚀 Quick Start
 
 ### Prerequisites
 
+<details>
+<summary>📋 Klik untuk melihat System Requirements</summary>
+
 **Required Software:**
-- Docker Desktop atau Docker Engine
-- Docker Compose
-- kubectl (Kubernetes CLI)
-- Minikube (untuk local Kubernetes)
-- Git
-- Code Editor (VS Code recommended)
+- ✅ Docker Desktop atau Docker Engine
+- ✅ Docker Compose
+- ✅ kubectl (Kubernetes CLI)
+- ✅ Minikube (untuk local Kubernetes)
+- ✅ Git
+- ✅ Code Editor (VS Code recommended)
 
 **System Requirements:**
-- CPU: 4 cores (8 recommended)
-- RAM: 8GB minimum (16GB recommended)
-- Disk: 50GB free space
-- OS: Linux, macOS, or Windows 10/11 with WSL2
+- 🖥️ CPU: 4 cores (8 recommended)
+- 💾 RAM: 8GB minimum (16GB recommended)
+- 💽 Disk: 50GB free space
+- 🖥️ OS: Linux, macOS, or Windows 10/11 with WSL2
 
-### Quick Installation
+</details>
 
-#### Windows (with WSL2)
+### ⚡ Quick Installation
+
+<details>
+<summary>🪟 Windows (with WSL2)</summary>
+
 ```powershell
 # Install WSL2
 wsl --install
@@ -73,7 +124,11 @@ choco install kubernetes-cli
 choco install minikube
 ```
 
-#### macOS
+</details>
+
+<details>
+<summary>🍎 macOS</summary>
+
 ```bash
 # Install Docker Desktop
 brew install --cask docker
@@ -85,7 +140,11 @@ brew install kubectl
 brew install minikube
 ```
 
-#### Linux
+</details>
+
+<details>
+<summary>🐧 Linux</summary>
+
 ```bash
 # Install Docker
 curl -fsSL https://get.docker.com -o get-docker.sh
@@ -104,7 +163,9 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 ```
 
-### Verification
+</details>
+
+### ✅ Verification
 
 ```bash
 # Verify installations
@@ -121,113 +182,149 @@ kubectl cluster-info
 kubectl get nodes
 ```
 
-## 📖 Cara Menggunakan Repository
+---
 
-### Untuk Setiap Pertemuan:
+## 📖 Panduan Penggunaan
 
-1. **Baca README.md** di folder pertemuan
-2. **Setup environment** sesuai instruksi
-3. **Ikuti tutorial** hands-on
-4. **Praktikkan** semua examples
-5. **Kerjakan tugas** yang diberikan
-6. **Submit** hasil ke LMS
-
-### Struktur Folder:
+### Workflow Setiap Pertemuan
 
 ```
-cloud-native-practicum/
-├── README.md
-├── examples/
+📖 Baca README → 🔧 Setup → 💻 Hands-on → 🧪 Practice → ✅ Submit
+```
+
+### Struktur Repository
+
+```
+📁 cloud-native-practicum/
+├── 📄 README.md
+├── 📁 examples/
 │   ├── docker-samples/
 │   ├── k8s-manifests/
 │   └── compose-files/
-├── pertemuan-01/
-│   ├── README.md
-│   └── exercises/
-├── pertemuan-02/
-│   └── ...
-└── pertemuan-08/
-    └── README.md (UTS Guidelines)
+├── 📁 pertemuan-01/
+│   ├── 📄 README.md
+│   └── 📁 exercises/
+└── 📁 pertemuan-08/
+    └── 📄 README.md (UTS Guidelines)
 ```
 
-## 💻 Teknologi Stack
+---
 
-### Containerization
-- **Docker**: Container runtime
-- **Docker Compose**: Multi-container orchestration
-- **Buildah/Podman**: Alternative container tools
+## 💻 Tech Stack
 
-### Orchestration
-- **Kubernetes**: Container orchestration
-- **Minikube**: Local Kubernetes
-- **kubectl**: Kubernetes CLI
-- **Helm**: Package manager (advanced)
+<div align="center">
 
-### Development Tools
-- **Visual Studio Code**: IDE
-- **Docker Extension**: Container management
-- **Kubernetes Extension**: K8s resources
-- **Git**: Version control
+### 🐳 Containerization
 
-### Cloud Platforms (Optional)
-- **AWS**: EKS (Elastic Kubernetes Service)
-- **Google Cloud**: GKE (Google Kubernetes Engine)
-- **Azure**: AKS (Azure Kubernetes Service)
-- **DigitalOcean**: DOKS (DigitalOcean Kubernetes)
+| Technology | Purpose |
+|:----------:|---------|
+| ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) | Container runtime |
+| ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=flat-square&logo=docker&logoColor=white) | Multi-container orchestration |
+| ![Buildah](https://img.shields.io/badge/Buildah-CC0000?style=flat-square&logo=redhat&logoColor=white) | Alternative container tools |
+
+### ☸️ Orchestration
+
+| Technology | Purpose |
+|:----------:|---------|
+| ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) | Container orchestration |
+| ![Minikube](https://img.shields.io/badge/Minikube-326CE5?style=flat-square&logo=kubernetes&logoColor=white) | Local Kubernetes |
+| ![kubectl](https://img.shields.io/badge/kubectl-326CE5?style=flat-square&logo=kubernetes&logoColor=white) | Kubernetes CLI |
+| ![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white) | Package manager (advanced) |
+
+### 🛠️ Development Tools
+
+| Tool | Purpose |
+|:----:|---------|
+| ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white) | IDE |
+| ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) | Version control |
+
+### ☁️ Cloud Platforms (Optional)
+
+| Platform | Service |
+|:--------:|---------|
+| ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white) | EKS (Elastic Kubernetes Service) |
+| ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white) | GKE (Google Kubernetes Engine) |
+| ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white) | AKS (Azure Kubernetes Service) |
+| ![DigitalOcean](https://img.shields.io/badge/DigitalOcean-0080FF?style=flat-square&logo=digitalocean&logoColor=white) | DOKS |
+
+</div>
+
+---
 
 ## 📊 Sistem Penilaian
 
-| Komponen | Bobot |
-|----------|-------|
-| Kehadiran & Partisipasi | 10% |
-| Tugas Mingguan (Weekly Labs) | 30% |
-| UTS (Mid-term Project) | 25% |
-| UAS (Final Project & Presentation) | 35% |
-| **TOTAL** | **100%** |
+<div align="center">
 
-### Kriteria Kelulusan:
-- Nilai akhir minimal: **60 (D)**
-- Kehadiran minimal: **75%**
-- Mengumpulkan minimal **75%** tugas
-- Mengikuti UTS dan UAS
+```
+┌─────────────────────────────────────────────────────────┐
+│                    DISTRIBUSI NILAI                      │
+├─────────────────────────────────────────────────────────┤
+│  ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  10% Kehadiran │
+│  ██████████████████████████░░░░░░░░░░░░░  30% Tugas     │
+│  ████████████████████░░░░░░░░░░░░░░░░░░░  25% UTS       │
+│  ██████████████████████████████░░░░░░░░░  35% UAS       │
+└─────────────────────────────────────────────────────────┘
+```
+
+</div>
+
+| Komponen | Bobot | Keterangan |
+|----------|:-----:|------------|
+| 📋 Kehadiran & Partisipasi | 10% | Minimal kehadiran 75% |
+| 📝 Tugas Mingguan | 30% | Weekly Labs |
+| 📊 UTS | 25% | Mid-term Project |
+| 🎯 UAS | 35% | Final Project & Presentation |
+
+### ✅ Kriteria Kelulusan
+
+- [x] Nilai akhir minimal: **60 (D)**
+- [x] Kehadiran minimal: **75%**
+- [x] Mengumpulkan minimal **75%** tugas
+- [x] Mengikuti UTS dan UAS
+
+---
 
 ## 📝 Submission Guidelines
 
-### Format File:
+### Format Struktur Folder
+
 ```
-NIM_Nama_PertemuanXX/
-├── docker/
+📁 NIM_Nama_PertemuanXX/
+├── 📁 docker/
 │   ├── Dockerfile
 │   └── docker-compose.yml
-├── kubernetes/
+├── 📁 kubernetes/
 │   ├── deployment.yaml
 │   └── service.yaml
-├── src/
+├── 📁 src/
 │   └── application-code/
-├── docs/
+├── 📁 docs/
 │   └── README.md
-└── screenshots/
+└── 📁 screenshots/
 ```
 
-### Checklist:
-- [ ] Code bisa di-run tanpa error
-- [ ] Dockerfile optimized
-- [ ] Documentation lengkap
-- [ ] Screenshots included
-- [ ] Best practices applied
-- [ ] Health checks implemented
+### ✅ Checklist Sebelum Submit
+
+- [ ] ✓ Code bisa di-run tanpa error
+- [ ] ✓ Dockerfile optimized
+- [ ] ✓ Documentation lengkap
+- [ ] ✓ Screenshots included
+- [ ] ✓ Best practices applied
+- [ ] ✓ Health checks implemented
+
+---
 
 ## 🔧 Troubleshooting
 
-### Docker Issues
+<details>
+<summary>🐳 Docker Issues</summary>
 
 **Docker daemon not running:**
 ```bash
 # Linux
 sudo systemctl start docker
 
-# Windows/Mac
-# Start Docker Desktop application
+# Windows/Mac - Start Docker Desktop application
 ```
 
 **Permission denied:**
@@ -246,7 +343,10 @@ sudo lsof -i :8080
 kill -9 <PID>
 ```
 
-### Kubernetes Issues
+</details>
+
+<details>
+<summary>☸️ Kubernetes Issues</summary>
 
 **Minikube won't start:**
 ```bash
@@ -276,116 +376,168 @@ kubectl describe pod <pod-name>
 docker pull <image-name>
 ```
 
-## 📚 Resources
+</details>
 
-### Official Documentation:
-- [Docker Documentation](https://docs.docker.com/)
-- [Kubernetes Documentation](https://kubernetes.io/docs/)
-- [Docker Compose Documentation](https://docs.docker.com/compose/)
+---
 
-### Learning Resources:
+## 📚 Referensi & Resources
+
+<details>
+<summary>📖 Official Documentation</summary>
+
+| Technology | Documentation |
+|------------|---------------|
+| Docker | [docs.docker.com](https://docs.docker.com/) |
+| Kubernetes | [kubernetes.io/docs](https://kubernetes.io/docs/) |
+| Docker Compose | [docs.docker.com/compose](https://docs.docker.com/compose/) |
+
+</details>
+
+<details>
+<summary>🎓 Learning Resources</summary>
+
 - [Docker Getting Started](https://docs.docker.com/get-started/)
 - [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
 - [Play with Docker](https://labs.play-with-docker.com/)
 - [Katacoda Interactive Learning](https://www.katacoda.com/)
 
-### Books:
-- "Docker Deep Dive" by Nigel Poulton
-- "Kubernetes Up & Running" by Kelsey Hightower
-- "Cloud Native DevOps with Kubernetes" by John Arundel
+</details>
 
-### Communities:
+<details>
+<summary>📚 Recommended Books</summary>
+
+- *"Docker Deep Dive"* by Nigel Poulton
+- *"Kubernetes Up & Running"* by Kelsey Hightower
+- *"Cloud Native DevOps with Kubernetes"* by John Arundel
+
+</details>
+
+<details>
+<summary>👥 Communities</summary>
+
 - [Docker Community](https://www.docker.com/community/)
 - [Kubernetes Slack](https://kubernetes.slack.com/)
 - [CNCF Community](https://www.cncf.io/community/)
 
-## 💡 Best Practices
-
-### Docker Best Practices:
-1. Use official base images
-2. Minimize layer count
-3. Use multi-stage builds
-4. Don't run as root
-5. Use .dockerignore
-6. Implement health checks
-7. Keep images small
-8. Version your images
-
-### Kubernetes Best Practices:
-1. Use namespaces
-2. Set resource limits
-3. Implement readiness/liveness probes
-4. Use ConfigMaps and Secrets
-5. Label everything
-6. Use rolling updates
-7. Implement monitoring
-8. Plan for failures
-
-### Cloud-Native Principles:
-1. **Design for failure**
-2. **Automate everything**
-3. **Treat logs as streams**
-4. **Keep it stateless**
-5. **Use declarative configs**
-6. **Implement observability**
-7. **Secure by default**
-8. **Scale horizontally**
-
-## 👥 Tim Pengajar
-
-**Dosen Pengampu:**  
-[Nama Dosen]
-
-**Asisten Praktikum:**  
-[Nama Asisten]
-
-## 📧 Kontak & Support
-
-- **Email:** [email dosen/asisten]
-- **Office Hours:** [jadwal konsultasi]
-- **Discord/Slack:** [link workspace]
-
-## 📄 Lisensi
-
-Materi ini dibuat untuk keperluan pendidikan di Universitas Muhammadiyah Makassar.
+</details>
 
 ---
 
-## 🎓 Cloud-Native Mindset
+## 💡 Cloud-Native Best Practices
 
-**Key Principles to Remember:**
+<div align="center">
 
-1. **Containers are ephemeral** - Design for disposability
-2. **Configuration is external** - Use env vars and ConfigMaps
-3. **Logs go to stdout** - Let the platform handle logging
-4. **One process per container** - Keep containers focused
-5. **Immutable infrastructure** - Replace, don't modify
-6. **Declarative > Imperative** - Describe desired state
-7. **Fail fast and loud** - Surface errors immediately
-8. **Automate repetitive tasks** - Infrastructure as Code
+### 🐳 Docker Best Practices
+
+| # | Practice |
+|:-:|----------|
+| 1 | Use official base images |
+| 2 | Minimize layer count |
+| 3 | Use multi-stage builds |
+| 4 | Don't run as root |
+| 5 | Use .dockerignore |
+| 6 | Implement health checks |
+| 7 | Keep images small |
+| 8 | Version your images |
+
+### ☸️ Kubernetes Best Practices
+
+| # | Practice |
+|:-:|----------|
+| 1 | Use namespaces |
+| 2 | Set resource limits |
+| 3 | Implement readiness/liveness probes |
+| 4 | Use ConfigMaps and Secrets |
+| 5 | Label everything |
+| 6 | Use rolling updates |
+| 7 | Implement monitoring |
+| 8 | Plan for failures |
+
+</div>
 
 ---
 
-## ⚠️ Important Notes
+## 🎯 Cloud-Native Mindset
 
-- **Docker Desktop** requires license for large enterprises
-- **Minikube** is for development only, not production
-- **Always backup** persistent data
-- **Never commit secrets** to git
-- **Test locally** before deploying
-- **Monitor resource usage**
-- **Keep images updated** for security
+<div align="center">
+
+| 💡 | Principle |
+|:--:|-----------|
+| 1️⃣ | **Containers are ephemeral** - Design for disposability |
+| 2️⃣ | **Configuration is external** - Use env vars and ConfigMaps |
+| 3️⃣ | **Logs go to stdout** - Let the platform handle logging |
+| 4️⃣ | **One process per container** - Keep containers focused |
+| 5️⃣ | **Immutable infrastructure** - Replace, don't modify |
+| 6️⃣ | **Declarative > Imperative** - Describe desired state |
+| 7️⃣ | **Fail fast and loud** - Surface errors immediately |
+| 8️⃣ | **Automate repetitive tasks** - Infrastructure as Code |
+
+</div>
 
 ---
+
+## 👥 Tim Pengembang
+
+<div align="center">
+
+### 🏛️ Laboratorium Informatika
+**Fakultas Teknik - Universitas Muhammadiyah Makassar**
+
+---
+
+| Role | Nama |
+|------|------|
+| 👨‍💻 **Developer & Maintainer** | [@devnolife](https://github.com/devnolife) |
+| 👨‍🏫 **Dosen Pengampu** | [Nama Dosen] |
+| 👨‍🔬 **Asisten Praktikum** | [Nama Asisten] |
+
+</div>
+
+---
+
+## ⚠️ Catatan Penting
+
+> [!WARNING]
+> - **Docker Desktop** requires license for large enterprises
+> - **Minikube** is for development only, not production
+> - **Always backup** persistent data
+> - **Never commit secrets** to git
+> - **Test locally** before deploying
+> - **Monitor resource usage**
+> - **Keep images updated** for security
+
+---
+
+<div align="center">
 
 ## 🚀 Let's Build Cloud-Native Apps!
 
-Mulai dari [Pertemuan 01](./pertemuan-01) dan kuasai Docker dan Kubernetes!
+Mulai dari [**Pertemuan 01**](./pertemuan-01) dan kuasai Docker dan Kubernetes!
 
 **Welcome to the Cloud-Native World! ☁️🐳☸️**
 
 ---
 
-**Last Updated:** December 2024  
-**Version:** 1.0  
-**Maintainer:** [Nama Asisten/Dosen]
+### 📧 Kontak & Support
+
+[![GitHub](https://img.shields.io/badge/GitHub-devnolife-181717?style=for-the-badge&logo=github)](https://github.com/devnolife)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:devnolife@gmail.com)
+
+---
+
+<sub>
+
+**Laboratorium Informatika - Fakultas Teknik**  
+**Universitas Muhammadiyah Makassar**  
+
+---
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,6,20&height=100&section=footer)
+
+**Last Updated:** December 2024 | **Version:** 2.0
+
+Made with ❤️ by [devnolife](https://github.com/devnolife)
+
+</sub>
+
+</div>
